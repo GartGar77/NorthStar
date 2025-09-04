@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NorthStar HCM - Payroll & HR for Canadian SMBs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': 'var(--color-brand-primary, #4f46e5)',
+              'brand-secondary': 'var(--color-brand-secondary, #6366f1)',
+              'brand-light': 'var(--color-brand-light, #e0e7ff)',
+              'brand-dark': 'var(--color-brand-dark, #3730a3)',
+              
+              // Neutral Palette
+              'slate-50': '#f8fafc',
+              'slate-100': '#f1f5f9',
+              'slate-200': '#e2e8f0',
+              'slate-300': '#cbd5e1',
+              'slate-400': '#94a3b8',
+              'slate-500': '#64748b',
+              'slate-600': '#475569',
+              'slate-700': '#334155',
+              'slate-800': '#1e293b',
+              'slate-900': '#0f172a',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.15.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
